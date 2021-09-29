@@ -62,7 +62,7 @@ booking No. and container No. auto-tracking site
 |---|---|---|---|---|---|
 |MEDU8686667|BUSAN, KR|02/10/2021|AARHUS, DK|04/08/2021|BUSAN, KR - Estimated Time of Arrival - 02/10/2021|
 |MEDU8878490|MATSUYAMA, JP|17/09/2021|AARHUS, DK|14/07/2021|MATSUYAMA, JP - Empty received at CY - 24/09/2021|
-|MEDU8811202|||||BUSAN, KR - Full Intended Transshipment - 03/10/2021|
+|MEDU8811202|BUSAN, KR|01/10/2021|KOBE, JP|28/09/2021|BUSAN, KR - Estimated Time of Arrival - 01/10/2021|
 |CXDU2180221|KOBE, JP|17/09/2021|AARHUS, DK|22/07/2021|KOBE, JP - Empty received at CY - 28/09/2021|
 |FFAU3751939|HAKATA, FUKUOKA, JP|23/09/2021|AARHUS, DK|22/07/2021|HAKATA, FUKUOKA, JP - Empty received at CY - 28/09/2021|
 |MSDU4206509|||||BUSAN, KR - Full Intended Transshipment - 12/10/2021|
