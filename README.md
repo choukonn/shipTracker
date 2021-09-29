@@ -28,7 +28,7 @@ booking No. and container No. auto-tracking site
 
   <img src='img/index_booking.png'>
 
-* ブッキング番号のリンクリストを作る(各番号は[OOCL船会社追跡サイト](https://www.oocl.com/jpn/Pages/default.aspx)にアクセスでき)
+* ブッキング番号の`リンク・リスト`を作る(各番号は[OOCL船会社追跡サイト](https://www.oocl.com/jpn/Pages/default.aspx)にアクセスでき)
   > **Note:** 第一回目にアクセスする時のみ、パズルの手作業が必要
 
   <img src='img/booking_No_list.png'>
