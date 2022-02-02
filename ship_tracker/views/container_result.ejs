@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <h1>
+            各コンテナ追跡情報：
+        </h1> 
+        <hr>
+        <hr>
+        <br>
+        <a role="button" class="btn btn-success" href="/container_detail_new.xlsx" download>DETAILS AS EXCEL&nbsp;&nbsp;<img src="/images/download_48px.png"></a>
+        <div class="container">
+            
+            <% for(var i=0; i < table_tarck_info.length; i++){ %>
+                <% 
+                    var container_info = table_tarck_info[i]; 
+                    var container_id = container_info.container_id;
+                    var tarck_info = container_info.track_info;
+                %>
+                <h2>
+                    <%= container_id%>
+                </h2>
+
+                <table id="table1" class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Location</td>
+                            <th scope="col">Description</td>
+                            <th scope="col">Date</td>
+                            <th scope="col">Vessel</td>
+                            <th scope="col">Voyage</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var j=1; j < tarck_info.length; j++){ %>
+                            <tr>
+                                <% var arr = tarck_info[j]; %>
+                                <td><%= arr[0] %></td>
+                                <td><%= arr[1] %></td>
+                                <td><%= arr[2] %></td>
+                                <td><%= arr[3] %></td>
+                                <td><%= arr[4] %></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                
+                </table>
+                <% } %>
+                <br>
+        </div>
+        <div class="container">
+            <footer>
+                <p>&copy; Systembit</p>
+            </footer>
+        </div>
+    </body>
+    <script>
+        //document.getElementById("table1").innerHTML = dom_table;
+    </script>
+</html>

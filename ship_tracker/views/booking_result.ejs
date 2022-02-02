@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <h1>
+            各ブッキング番号追跡情報：
+        </h1> 
+        <hr>
+        <hr>
+        <br>
+        <a role="button" class="btn btn-success" href="/container_detail_new.xlsx" download>DETAILS AS EXCEL&nbsp;&nbsp;<img src="/images/download_48px.png"></a>
+        <div class="container">
+                <h2>
+                    <%= table_booking_Nums.company_name%>:
+                </h2>
+                <br>
+                <table id="table1" class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Booking ID</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% var booking_Nums = table_booking_Nums.booking_Nums;%>
+                        <% for(var j=0; j < booking_Nums.length; j++){ %>
+                            <tr>
+                                <td><a href="/search/<%= booking_Nums[j] %>"><%= booking_Nums[j] %></a></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+                <br>
+        </div>
+        <div class="container">
+            <footer>
+                <p>&copy; Systembit</p>
+            </footer>
+        </div>
+    </body>
+    <script>
+        //document.getElementById("table1").innerHTML = dom_table;
+    </script>
+</html>

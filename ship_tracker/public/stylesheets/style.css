@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/*
+a:visited{
+  color:blue;
+}*/
+
+header {
+  margin-top: 30px;
+}
+
+footer {
+  margin-top: 20%;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+h1 {
+  margin: 0;
+}
+

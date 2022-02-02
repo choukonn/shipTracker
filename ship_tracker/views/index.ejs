@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Shipments Tracker</h1>
+        </header>
+        <hr>
+        <hr>
+    </div>
+    <div class="container">
+        <form method="POST" action="/search" encType="multipart/form-data">
+            <div class="form-group">
+                <label for="company_name">船会社名</label>
+                <select id="company_name" name="company_name" class="form-control">
+            <option value="">船会社を選択</option>
+            <option value="OOCL">OOCL</option>
+            <option value="COSCO">COSCO</option>
+            <option value="WAN HAI">WAN HAI</option>
+            <option value="Y.M.L">Y.M.L</option>
+          </select>
+            </div>
+            <div class="form-group">
+                <label for="booking_id">ブッキング番号<span class="label label-danger">船会社必須</span></label>
+                <input type="text" id="booking_id" name="booking_id" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="container_id">コンテナ番号</label>
+              <input type="text" id="container_id" name="container_id" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="excel_container">コンテナ・エクセル選択</label>
+            <input type="file" accept=".xlsx" id="excel_container" name="excel_container" class="form-control-file">
+        </div>
+        <div class="form-group">
+            <label for="excel_container">ブッキング・エクセル選択<span class="label label-danger">船会社必須</span></label>
+            <input type="file" accept=".xlsx" id="excel_booking" name="excel_booking" class="form-control-file">
+        </div>
+            <button type="submit" class="btn btn-success btn-lg btn-block">検索</button>
+        </form>
+    </div>
+    <div class="container">
+        <footer>
+            <p>&copy; Systembit</p>
+        </footer>
+    </div>
+</body>
+
+</html>
