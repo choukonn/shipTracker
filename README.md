@@ -4,7 +4,7 @@ booking No. and container No. auto-tracking site.
 # 技術案
 
 * [playwright](https://github.com/microsoft/playwright)
-* node.js
+* [node.js](https://nodejs.org/en/)
 
 # 検証-Booking No. Tracking
 <br>
