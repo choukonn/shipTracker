@@ -1,5 +1,5 @@
 # shipTracker
-booking No. and container No. auto-tracking site
+booking No. and container No. auto-tracking site.
 
 # 技術案
 
