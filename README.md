@@ -24,7 +24,7 @@ booking No. and container No. auto-tracking site.
 
 ## できること:
 
-* index page(ブッキング番号リスト`エクセル・ファイル（ex. booking_No_list.xlsx）`をアップロード)
+* index page(ブッキング番号リスト`エクセル・ファイル（ex. booking_No_list.xlsx）`をアップロード).
 
   <img src='img/index_booking.png'>
 
